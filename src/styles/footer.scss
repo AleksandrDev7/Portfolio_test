@@ -1,0 +1,52 @@
+.footer {
+  padding-top: 40px;
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .order_design {
+      margin-right: 0;
+    }
+
+    .order_visitSpec,
+    .order_design {
+      padding: 12px 40px;
+      border: 2px solid #a89365;
+      color: #a89365;
+      background-color: #fff;
+      margin-right: 40px;
+
+      &:hover,
+      &:active {
+        cursor: pointer;
+        border: 2px solid #a89365;
+        color: #fff;
+        background-color: #a89365;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  .footer {
+    padding-top: 20px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .order_design {
+        margin-top: 20px;
+      }
+
+      .order_visitSpec,
+      .order_design {
+        width: 95%;
+        margin-right: 0;
+      }
+    }
+  }
+}

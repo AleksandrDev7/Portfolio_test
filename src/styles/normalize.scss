@@ -27,8 +27,8 @@ ol {
   list-style: none;
 }
 
-button,
-button:active,
-button:focus {
+button {
   outline: none;
+  background-color: inherit;
+  border: 0;
 }

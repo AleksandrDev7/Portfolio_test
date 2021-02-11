@@ -1,8 +1,11 @@
 $body-color: slateblue;
 
 body {
+  min-width: 1920px;
+  margin: 0 auto;
   color: $body-color;
   font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -11,8 +14,52 @@ h1 {
   font-weight: 800;
 }
 
-.wrap {
-  max-width: 1920px;
-  width: 100%;
+.wrapper {
+  max-width: 1850px;
   margin: 0 auto;
+}
+
+button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-device-width: 1280px) {
+  body {
+    min-width: 1250px;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  body {
+    min-width: 580px;
+  }
+
+  .wrapper {
+    max-width: 560px;
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  body {
+    min-width: 300px;
+  }
+
+  .wrapper {
+    max-width: 280px;
+  }
 }
